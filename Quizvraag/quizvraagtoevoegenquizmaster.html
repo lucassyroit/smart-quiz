@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Quiz | Quizvraag Toevoegen</title>
+</head>
+<body>
+<form action="addquestionquizmaster.php" method="post">
+    <label for="vraag_nummer">Nummer van vraag:</label>
+    <input type="number" id="vraag_nummer" name="vraag_nummer" min="1" required><br><br>
+    <label for="ronde_nummer">Nummer van ronde:</label>
+    <input type="number" id="ronde_nummer" name="ronde_nummer" min="1" required><br><br>
+    <label for="vraag">Vraag:</label>
+    <input type="text" id="vraag" name="vraag" required><br><br>
+
+    <label for="optie1">A:</label>
+    <input type="text" id="optie1" name="optie1" required><br>
+
+    <label for="optie2">B:</label>
+    <input type="text" id="optie2" name="optie2" required><br>
+
+    <label for="optie3">C:</label>
+    <input type="text" id="optie3" name="optie3" required><br>
+
+    <label for="optie4">D:</label>
+    <input type="text" id="optie4" name="optie4" required><br><br>
+
+    <label for="antwoord">Juiste antwoord:</label>
+    <select id="antwoord" name="antwoord">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select><br><br>
+
+    <input type="submit" value="Toevoegen">
+</form>
+</body>
+</html>
